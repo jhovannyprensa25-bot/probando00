@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <title>Untitled</title>
+    <link rel="stylesheet" href="./style.css">
+
+  </head>
+    
+  <body>
+  <!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Classes 4toC Fé y Alegría</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Menú lateral -->
+  <aside class="sidebar">
+    <div class="logo">
+      <img src="https://toppng.com/uploads/preview/fe-y-alegria-logo-vector-free-download-11574118619vs0wwbxzhh.png" alt="logo">
+      <h2>Classes 4toC<br>Fé y Alegría</h2>
+    </div>
+    <nav>
+      <ul>
+        <li><a href="#" id="inicio">Inicio</a></li>
+        <li><a href="#" id="tareas">Tareas</a></li>
+      </ul>
+    </nav>
+  </aside>
+
+  <!-- Contenido principal -->
+  <main class="content" id="main-content">
+    <header class="banner">
+      <h1>Bienvenido</h1>
+    </header>
+
+    <section class="destacado">
+      <div class="imagen-derecha">
+        <img src="https://cdn5.dominicanasolidaria.org/wp-content/uploads/2018/02/logo-corazon-fya-03-1024x1024.jpg" alt="destacado">
+      </div>
+
+      <blockquote class="frase">
+        "La mejor manera de encontrar las clases, sin descargarlas"
+        <span>- Fé Y Alegría</span>
+      </blockquote>
+    </section>
+  </main>
+
+  <!-- Script para interactividad -->
+  <script>
+    const tareas = document.getElementById('tareas');
+    const inicio = document.getElementById('inicio');
+    const mainContent = document.getElementById('main-content');
+
+    // Guardamos el contenido original para restaurar
+    const contenidoOriginal = mainContent.innerHTML;
+
+    tareas.addEventListener('click', function(e) {
+      e.preventDefault();
+      mainContent.innerHTML = ''; // Deja la página en blanco
+    });
+
+    inicio.addEventListener('click', function(e) {
+      e.preventDefault();
+      mainContent.innerHTML = contenidoOriginal; // Restaura contenido original
+    });
+  </script>
+</body>
+</html>
+    <script  src="./script.js"></script>
+
+  </body>
+  
+</html>

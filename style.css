@@ -1,0 +1,97 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+/* Menú lateral */
+.sidebar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 220px;
+  height: 100%;
+  background: #000;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.sidebar .logo {
+  text-align: center;
+  padding: 20px;
+}
+
+.sidebar .logo img {
+  width: 100px;
+  margin-bottom: 10px;
+}
+
+.sidebar .logo h2 {
+  font-size: 16px;
+  text-align: center;
+  line-height: 1.4;
+}
+
+.sidebar nav ul {
+  list-style: none;
+  margin-top: 20px;
+  width: 100%;
+}
+
+.sidebar nav ul li {
+  width: 100%;
+}
+
+.sidebar nav ul li a {
+  display: block;
+  padding: 15px;
+  color: #fff;
+  text-decoration: none;
+  transition: background 0.3s;
+}
+
+.sidebar nav ul li a:hover {
+  background: #333;
+}
+
+/* Contenido principal */
+.content {
+  margin-left: 220px;
+  padding: 20px;
+}
+
+.banner {
+  background: linear-gradient(90deg, #c0392b, #8e44ad);
+  padding: 10px 20px;
+  color: white;
+  text-align: center;
+}
+
+.destacado {
+  margin-top: 30px;
+  position: relative;
+}
+
+.imagen-derecha {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.imagen-derecha img {
+  width: 200px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+
+.frase {
+  text-align: center;
+  font-size: 18px;
+  font-style: italic;
+  color: #333;
+  margin-top: 180px;
+}
